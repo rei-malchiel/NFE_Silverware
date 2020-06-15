@@ -29,8 +29,8 @@
 #ifdef SILVERWARE_RATES
 // *************rate in deg/sec
 // *************for acro mode
-#define MAX_RATE 860.0          //Roll & Pitch axis
-#define MAX_RATEYAW 500.0       //Yaw axis (used in acro and leveling modes)
+#define MAX_RATE 600.0          //Roll & Pitch axis
+#define MAX_RATEYAW 600.0       //Yaw axis (used in acro and leveling modes)
 
 // *************EXPO from 0.00 to 1.00 , 0 = no exp
 // *************positive = less sensitive near center 
@@ -38,9 +38,9 @@
 #define ACRO_EXPO_PITCH 0.80
 #define ACRO_EXPO_YAW 0.60
 
-#define ANGLE_EXPO_ROLL 0.55
+#define ANGLE_EXPO_ROLL 0.40
 #define ANGLE_EXPO_PITCH 0.0
-#define ANGLE_EXPO_YAW 0.55
+#define ANGLE_EXPO_YAW 0.60
 #endif
 
 #ifdef BETAFLIGHT_RATES
@@ -58,7 +58,7 @@
 
 
 // *************max angle for level mode
-#define LEVEL_MAX_ANGLE 65.0f
+#define LEVEL_MAX_ANGLE 90.0f
 
 // ************* low rates multiplier if rates are assigned to a channel
 #define LOW_RATES_MULTI 0.5f
@@ -104,7 +104,7 @@
 //*************channel is on, or racemodeHORIZON if both channels are on - and will be standard LEVELMODE if neither 
 //*************racemode or horizon are switched on.
 #define ARMING CHAN_5
-#define IDLE_UP CHAN_5
+#define IDLE_UP CHAN_OFF
 #define LEVELMODE CHAN_6
 #define RACEMODE  CHAN_7
 #define HORIZON   CHAN_8
