@@ -105,14 +105,14 @@ THE SOFTWARE.
 // enable and set TX_POWER_GENERAL and/or TX_POWER_ON_TLM and experiment with values until you get stable TLM connection and decent bluetooth and controller reception
 // WARNING !!!!!!!!!! USE ONLY VALUES FROM 0 TO 7 !!! DO NOT GO OVER 7 AND BELOW 0 !!!
 
-//#define TX_POWER_GENERAL 3 // general value for quadcopter power (use odd numbers, but try with even also - smaller value is better for telemetry signal)
+#define TX_POWER_GENERAL 3 // general value for quadcopter power (use odd numbers, but try with even also - smaller value is better for telemetry signal)
 
-//#define TX_POWER_ON_TLM 0 //quadcopter power during transmitting telemetry data (use even numbers but try odd also - smaller value is better for telemetry signal)
+#define TX_POWER_ON_TLM 0 //quadcopter power during transmitting telemetry data (use even numbers but try odd also - smaller value is better for telemetry signal)
 //usually TX_POWER_ON_TLM need to be lower than TX_POWER_GENERAL, but experiment if that combination does not help...
 // If TX_POWER_GENERAL/TX_POWER_ON_TLM still produces constant TLM DISCONNECTED errors when motors are on and on high throttle, try also enabling USE_ALL_BLE_CHANNELS.
 // You can use all three settings in the same time or experiment with one or two of them until you get better and stable bluetooth signal.
 
-//#define USE_ALL_BLE_CHANNELS
+#define USE_ALL_BLE_CHANNELS
 
 // ----------------------------------------------
 // Configuration for SilverVISE telemetry - end
